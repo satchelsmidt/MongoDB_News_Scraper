@@ -1,0 +1,57 @@
+<div class="text">
+<h1>The Atlantic - Tech Column</h1>
+</div>
+
+<br>
+<br>
+
+<div class="text">
+<h2>Find the latest articles from the Atlantic now!</h2>
+</div>
+<input type="button" id="scrapeButton" value="Find New Articles!">
+
+<br>
+<br>
+
+<div class="text">
+<h3>Articles</h3>
+
+<div id="articleSection">
+
+    {{#each articles}}
+      <div class="article">
+        <h1>{{title}}</h1>
+      </div>
+    {{/each}}
+
+</div>
+
+<br>
+<br>
+
+
+</div>
+
+<br>
+
+
+<br>
+
+{{!-- <div class="text">
+<h2>Construct a new Burger!</h2>
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="burg">Burger Type:</label>
+    <input type="text" id="burg" name="name">
+  </div>
+
+  <div class="form-group">
+    <label for="devoured">Devoured?</label><br>
+    <input class="inputs" type="radio" name="devoured" value="1" checked> Devoured! <br>
+    <input class="inputs" type="radio" name="devoured" value="0"> Uneaten
+  </div>
+
+  <button type="submit">Build Burger</button>
+</form>
+</div> --}}
