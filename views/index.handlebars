@@ -1,12 +1,11 @@
 <div class="text">
-<h1>The Atlantic - Tech Column</h1>
+  <h1>The Atlantic - Tech Column</h1>
 </div>
 
 <br>
-<br>
 
 <div class="text">
-<h2>Find the latest articles from the Atlantic now!</h2>
+  <h2>Stay up to date on the latest tech news!!</h2>
 </div>
 <input type="button" id="scrapeButton" value="Find New Articles!">
 
@@ -14,20 +13,33 @@
 <br>
 
 <div class="text">
-<h3>Articles</h3>
-
-<div id="articleSection">
+  <h3>Articles</h3>
+  <hr>
+  <div id="articleSection">
 
     {{#each articles}}
-      <div class="article">
-        <h1>{{title}}</h1>
-      </div>
+    <div class="article">
+      <h2>{{title}}</h2>
+      <hr>
+      <img src="{{img}}" class="articleImage">
+      <br>
+      <a href="{{link}}" target="_blank">Link to article</a>
+      <h5>{{blurb}}</h5>
+      <h5><em>{{author}}</em></h5>
+      {{!-- May need to change _id to something else more correct --}}
+      <Input type="button" value="Add Note" class="noteButton" data-id={{_id}} data-title="{{title}}">
+      <br>
+    </div>
     {{/each}}
 
-</div>
+  </div>
 
-<br>
-<br>
+  <div id="noteDiv" class='modal'>
+    {{!-- <span class="close">&times;</span> --}}
+  </div>
+
+  <br>
+  <br>
 
 
 </div>
