@@ -25,7 +25,7 @@ app.use(express.json());
 //redirect client-facing (static) files to the public folder
 app.use(express.static(path.join(__dirname, "public")));
 
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/newsScraperDB";
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
 
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
 
