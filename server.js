@@ -109,8 +109,8 @@ app.get("/scrape", function (req, res) {
                 return true
             };
 
-            //Save articles (to be added at later date)
-            // result.isSaved = false
+            // Save articles (to be added at later date)
+            result.isSaved = false
 
             //Attempt to parse existing db records out, failed
             // db.Article.countDocuments({ title: result.title }, function (err, count) {
