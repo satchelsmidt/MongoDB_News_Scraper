@@ -37,6 +37,7 @@ Here is a gif showing the note-adding function of the app:
 
 * Delete already/scraped articles, stop rendering already scraped articles, clear DB on every 'find articles' press
 * Re-push to heroku, not grabbing new articles
+ * Load new articles from top, not bottom
 * Change spacing on returned article boxes to avoid weird spacing
 * Change 'find new articles' button to be not ugly
 * Add footer w/ copyright + name + github
