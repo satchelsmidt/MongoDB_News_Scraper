@@ -17,7 +17,7 @@ On application load, the user will be presented with a button prompting them to 
 Each article will also include an 'Add Note' button, that pulls up a modal allowing the user to add persistent notes for each specific article.
 
 Here is a gif showing the note-adding function of the app:
-<img src="/assets/readme_1.gif" width="600" height="250"/>
+<img src="/public/assets/readme_1.gif" width="600" height="250"/>
 
 ### Technology Used
 
